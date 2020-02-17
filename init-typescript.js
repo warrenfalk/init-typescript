@@ -163,7 +163,7 @@ async function createTestTsConfigJson() {
             ]
         },
         "references": [
-            {"path": "../src/tsconfig.json"}
+            {"path": "../tsconfig.json"}
         ]
     }
     await fs.promises.writeFile("test/tsconfig.json", JSON.stringify(tsConfig, null, 4));
